@@ -8,7 +8,7 @@
 body {
   height: 100vh;
   width: 100%;
-  background-image: url("background.jpg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,6 +64,7 @@ body {
 
 /* 3. The Counter Box - Main Layout */
 .countbox {
+  height: 70%;
   width: 90%;
   max-width: 450px;
   background-color: white;
@@ -111,7 +112,7 @@ body {
 .buttons {
   display: flex;
   width: 100%;
-  height: 120px;
+  flex: 1;
   border-top: 1px solid #eee;
 }
 
@@ -141,6 +142,12 @@ body {
 .material-symbols-outlined {
   font-size: 50px !important;
   color: #333;
+}
+
+.tap-hint {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
 }
 
 /* 4. Mobile View (Screens under 768px) */
@@ -173,7 +180,6 @@ body {
   }
 
   .buttons {
-    height: 100px;
+    flex: 1;
   }
 }
-
