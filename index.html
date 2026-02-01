@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,23 +20,27 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body loding="lazy">
+    <!-- navbar -->
     <nav class="navbar">
       <div class="logo">Mantra Counter</div>
-
+      <!-- hamburguer for mobile view -->
       <div class="hamburger" id="hamburger">
         <span class="material-symbols-outlined" style="color: white">menu</span>
       </div>
-
+      <!-- nav bar list -->
       <ul class="nav-links" id="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">History</a></li>
+        <li><a href="#" id ="home">Home</a></li>
+        <li><a href="#" id ="aboutUs">About Us</a></li>
+        <li><a href="#" id="history">History</a></li>
         <li><a href="#" id="reset">Reset</a></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="#" id="setting">Settings</a></li>
       </ul>
     </nav>
-
-    <div class="countbox">
+    <!-- main content -->
+     <!-- home -->
+    <div class="countbox" id="countBox">
       <div class="box_name">
         <h3>Mantra Counter</h3>
       </div>
@@ -44,6 +49,61 @@
         <button class="btn-plus" onclick="incriment()">
            <p id="display"> Tap </p>
         </button>
+      </div>
+    </div>
+
+    <!-- About Us Section -->
+     <div class = "section" id="aboutUsSection">
+      <h2 class="sectionHeading"><u>About Us</u></h2>
+      <div class="section-Box ">
+        <h2 style="font-size: 15px;"><i>~ Hi User ~</i></h2>
+        <p style="font-size: 12px; text-align: justify;">I am Mantra Counter,<br>
+          a simple web application designed to help you keep track of
+          your mantra repetitions with ease. Whether you're practicing meditation,
+          chanting, or any other form of mantra repetition, I am here to assist you
+          in staying focused and motivated.
+        </p>
+      </div>
+      <div class="section-Box">
+        <h2 style="font-size: 15px;"><i>~ Features ~</i></h2>
+        <ul style="font-size: 12px; text-align: justify;">
+          <li>Simple and Intuitive Interface: My user-friendly design ensures that you can easily navigate and use the counter without any hassle.</li>
+          <li>Customizable Target: You can set your desired target for mantra repetitions, allowing you to tailor your practice to your specific needs.</li>
+          <li>Responsive Design: I am built to work seamlessly across various devices, including desktops, tablets, and smartphones, so you can use me anytime, anywhere.</li>
+        </ul>
+      </div>
+      <div class="section-Box">
+        <h2 style="font-size: 15px;"><i>~ How to Use ~</i></h2>
+        <p style="font-size: 12px; text-align: justify;">
+          To use the Mantra Counter, simply tap the counter button to increment your mantra repetitions. You can set a target number of repetitions in the input field above. Once you reach your target, you'll be notified.
+        </p>
+      </div>
+      <div class="section-Box">
+        <h2 style="font-size: 15px;"><i>~ Contact Us ~</i></h2>
+        <p style="font-size: 12px; text-align: justify;">
+          If you have any questions, feedback, or suggestions, feel free to reach out to us at
+          <a href="mailto:pradhanmanish943@gmail.com">pradhanmanish943@gmail.com</a>
+          </p>
+      </div>
+    </div>
+    <!-- History Section -->
+     <div class = "section" id="historySection">
+      <h2 class="sectionHeading"><u>History</u></h2>
+      <div class="section-Box ">
+        <h2 style="font-size: 15px;"><i>~ Coming Soon ~</i></h2>
+        <p style="font-size: 12px; text-align: justify;">
+          The History feature is under development and will be available soon. Stay tuned for updates!
+        </p>
+      </div>
+    </div>
+    <!-- Setting Section -->
+     <div class = "section" id="settingSection">
+      <h2 class="sectionHeading"><u>Settings</u></h2>
+      <div class="section-Box ">
+        <h2 style="font-size: 15px;"><i>~ Coming Soon ~</i></h2>
+        <p style="font-size: 12px; text-align: justify;">
+          The Settings feature is under development and will be available soon. Stay tuned for updates!
+        </p>
       </div>
     </div>
   </body>
